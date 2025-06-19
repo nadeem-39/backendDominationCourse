@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+</head>
+    <body <% if(count%4 ==0){ %>style="background-color: blue;" <% } %>
+        <% if(count%4 ==1){ %>style="background-color: red;" <% } %>
+        <% if(count%4 ==2){ %>style="background-color: yellow" <% } %>
+        <% if(count%4 ==3){ %>style="background-color: green;" <% } %> >
+    
+    <% if(num==6) {%>
+        <h1>wow you get 6 now you can roll again</h1>
+    <% } %>
+        <h1> Your rolled number is <%= num%></h1>
+        <h2><%= 2 + 2 %></h2>
+    
+</body>
+</html>

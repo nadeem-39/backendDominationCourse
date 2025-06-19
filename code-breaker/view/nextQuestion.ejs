@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>congratulations your answer is correct</h2>
+    <button id="clck"> click here to get new question</button>
+    <form style="opacity: 0;" action="/background" id="question">
+        <h2>Find the keyword on this page</h2>
+        <input type="text" name="keyword" id="">
+        <br>
+        <br>
+        <br>
+        <button>submit</button>
+    </form>
+
+    <p style="color: white;">keyword is kaif</p>
+
+    <script>
+       let clck_btn =  document.getElementById("clck");
+       let elem_form = document.getElementById("question");
+
+       clck_btn.addEventListener("click",()=>{
+        elem_form.style.opacity = 1;
+       });
+    </script>
+</body>
+</html>

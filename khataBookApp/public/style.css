@@ -1,0 +1,14 @@
+#outer{
+    background-color: red;
+    height: 400px;
+    width: 400px;
+}
+#inner{
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+button{
+    background-color: rgb(148, 222, 230);
+    border-radius: 5px;
+}

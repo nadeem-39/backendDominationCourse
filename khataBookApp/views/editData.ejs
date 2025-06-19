@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Edit current data</title>
+</head>
+<body>
+   <h1>hii here is your data</h1>
+   <h2>your day was <%= file.substring(0,10) %></h2>
+   <br>
+   <form action= "/editData/confirm/<%=file%>" method="post" >
+    <br>
+    <br>
+    <textarea name="value" id="" cols="30" rows="10"><%= data %></textarea>
+    <br>
+    <button>Update</button>
+
+   </form>
+</body>
+</html>

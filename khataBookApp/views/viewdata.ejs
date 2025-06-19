@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view hisaab</title>
+</head>
+<body>
+    <h1>This is your view page which created at <%= file.substring(0,10) %></h1>
+    <br>
+    <h2>Data of your file is...</h2>
+    <!-- <%= typeof(data) %> -->
+    <% dataInArr.forEach(element =>{ %>
+        <h5><%= element %></h5>
+
+    <% }) %>
+    <br>
+    <br>
+    <form action="/editData/<%=file%>">
+        <button>Edit current hisaab</button>
+
+    </form>
+    <br>
+    <form action="/"><button>back to home</button></form>
+
+
+</body>
+</html>
